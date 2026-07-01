@@ -7,7 +7,12 @@ arr_2d = np.array([[1,2,3],
                   [4,5,6],
                   [7,8,9]])
 print("One dimensional Array : ",arr_1d) 
+print("The shape of arr_1d : ",arr_1d.shape)
+print("The data type of arr_1d : ",arr_1d.dtype)
 print("Two dimensional Array(3*3) : ",arr_2d)
+print("The shape of arr_2d : ",arr_2d.shape)
+print("The data type of arr_2d : ",arr_2d.dtype)
+
 
 
 #Question 2)
@@ -32,7 +37,13 @@ print("Array of Even numbers from 10 to 50 :",even_arr)
 new_arr = np.arange(5,100,5)
 print("Array of Numbers from 5 to 100 with step of 5 : ",new_arr)
 
+#Question 4)
+#a)
+lin_arr1 = np.linspace(0,5,10)
+print("10 equally spaced numbers between 0 and 5 : ",lin_arr1,"And its length is : ",len(lin_arr1))
 
+lin_arr2 = np.linspace(-10,10,15)
+print("15 equally spaced numbers between -10 and 10 : ",lin_arr2,"And its length is : ",len(lin_arr2))
 
 
 
