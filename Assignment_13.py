@@ -45,5 +45,12 @@ print("10 equally spaced numbers between 0 and 5 : ",lin_arr1,"And its length is
 lin_arr2 = np.linspace(-10,10,15)
 print("15 equally spaced numbers between -10 and 10 : ",lin_arr2,"And its length is : ",len(lin_arr2))
 
+#Question 5)
+#a)
+random_array1 = np.random.rand(0,1,10)
+print("1D array of 10 random numbers between 0 and 1 is : ",random_array1)
+#b)
+random_matrix = np.random.randn(3,3)
+print("A 3x3 matrix of random numbers : ",random_matrix)
 
 
