@@ -91,3 +91,33 @@ print("Sum:",matrix.sum())
 print("Mean:",matrix.mean())
 print("Std:",matrix.std())
 print("Max in each row:",matrix.max(axis=1))
+
+#Question 10)
+
+try:
+    # Get number of elements
+    n = int(input("How many numbers? "))
+    
+    # Generate array
+    arr = np.random.randint(10, 101, size=n)
+    
+    # Print stats
+    print("Array:", arr)
+    print("Mean:", arr.mean())
+    print("Median:", np.median(arr))
+    print("Std:", arr.std())
+    print("Min:", arr.min(), "Max:", arr.max())
+    
+    # Try reshape if possible
+    if n > 1:
+        for i in range(2, n):
+            if n % i == 0:
+                matrix = arr.reshape(i, n//i)
+                print(f"Reshaped {i}*{n//i}:\n{matrix}")
+                print("Row sums:", matrix.sum(axis=1))
+                break
+        else:
+            print("Cannot reshape to 2D")
+            
+except ValueError:
+    print("Enter a valid number")
