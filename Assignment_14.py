@@ -49,3 +49,20 @@ print("The first column : ",arr[:,0])
 print("The center 2*2 : \n",(arr[1:3][1:3]).reshape(2,2))
 even_array = arr[arr%2 == 0]  
 print("Even numbers array : ",even_array)
+
+
+#Question 6)
+
+arr = np.random.randint(1,100,(5,5))
+print("The 5*5 array : \n",arr)
+print("Diagonal elements : \n")
+for i in range(min(arr.shape)):
+    print("arr[", i, ",",i,"]=",arr[i,i])
+arr_50 = arr[arr>50]
+print("Array containing elements greater than 50 : \n",arr_50)
+print("Array after Replacing all elements less than 30 with 0 : \n")
+for i in range(min(arr.shape)):
+    arr[arr<30]=0
+print(arr)
+
+print("The final modified array : \n",arr)
