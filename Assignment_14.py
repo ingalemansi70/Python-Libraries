@@ -90,3 +90,17 @@ print("Matrix multiplication = \n",A@B)# @ = Matrix multiplication / Dot product
 # Shape rule: (m×n) @ (n×p) = (m×p). Inner dimensions must match
 
 
+#Question 9)
+
+mat = np.random.randint(-18,10,(6,6))
+print("The 6*6 matrix : \n",mat)
+print("Its shape : ",mat.shape)
+print("Its size : ",mat.size)
+print("Its datatype : ",mat.dtype)
+print("The index of maximum value in matrix : ",np.argmax(mat)) 
+print("The index of manimum value in matrix : ",np.argmin(mat))    
+mat2 = mat[0:3, 0:3]
+print("The top-left 3x3 submatrix :\n",mat2)
+mat = np.abs(mat)
+print("Matrix after replacing all negative values with their absolute values : \n",mat)
+print("The mean of modified matrix  : ",np.mean(mat))
