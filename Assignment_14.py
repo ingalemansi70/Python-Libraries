@@ -66,3 +66,17 @@ for i in range(min(arr.shape)):
 print(arr)
 
 print("The final modified array : \n",arr)
+
+#Question 7)
+
+a = np.array([10, 20, 30, 40])
+b = np.array([1, 2, 3, 4])
+
+print("Array a = \n",a)
+print("Array b = \n",b)
+print("Addition of array  a and b = ",a+b)
+print("Substraction of array  a and b = ",a-b)
+print("Multiplication of array  a and b = ",a*b)
+print("a**b = ",a**b)
+print("a % b = ",a%b)
+
