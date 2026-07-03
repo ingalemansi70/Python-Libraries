@@ -104,3 +104,49 @@ print("The top-left 3x3 submatrix :\n",mat2)
 mat = np.abs(mat)
 print("Matrix after replacing all negative values with their absolute values : \n",mat)
 print("The mean of modified matrix  : ",np.mean(mat))
+
+
+#Question 10)
+
+# 1. Create 10x5 marks array, 30 to 100
+np.random.seed(42)
+marks = np.random.randint(30, 101, size=(10, 5))
+
+print("Marks Array")
+print(marks)
+print("Shape", marks.shape)
+print()
+
+# 2. Total and average for each student
+total = np.sum(marks, axis=1)
+avg = np.mean(marks, axis=1)
+
+print("Total Marks", total)
+print("Average Marks", np.round(avg, 2))
+print()
+
+# 3. Best and worst student using argmax/argmin
+best_idx = np.argmax(total)
+worst_idx = np.argmin(total)
+
+print("Best Student Index", best_idx + 1)
+print("Best Student Total", total[best_idx])
+print("Worst Student Index", worst_idx + 1)
+print("Worst Student Total", total[worst_idx])
+print()
+
+# 4. Class mean and std
+print("Class Mean", np.mean(marks))
+print("Class Std", np.std(marks))
+print()
+
+# 5. Get top 3 students
+top3_idx = np.argsort(total)[-3:][::-1]
+print("Top 3 Student Indices", top3_idx + 1)
+print("Top 3 Students Marks")
+print(marks[top3_idx])
+print()
+
+# 6. Reshape demo
+print("Reshaped to 5x10")
+print(marks.reshape(5, 10))
